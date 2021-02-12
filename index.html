@@ -10,10 +10,11 @@
       <p style="z-index: 9999; color: white; font-family: Helvetica, sans-serif; font-size: 22px; top:10vh;">🔴 LIVE</p>
     </div>
     <script>
-      window.onload = function() {
-        var video=document.getElementById("vid");
+      var video=document.getElementById("myVideo") ;   
+
+      $(video).on("click", function(e){
         video.muted = !video.muted;
-      }
+      });
     </script>
   </body>
 </html>
